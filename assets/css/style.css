@@ -1,117 +1,98 @@
-.slider {
-  height: 400px;
-  position: relative;
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+* {
+  font-family: 'Lato',
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#slides {
-  height: calc(100% - 40px);
-  background: #ccc;
-  /*			background-image: url(../images/sliderbg.jpg);*/
-  background-position: center 70px;
-  background-attachment: fixed;
-  background-size: cover;
-  position: relative;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Staatliches',
+    cursive;
+  text-transform: uppercase;
 }
 
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: none;
-  text-align: center;
-  /*			background: #ccc;*/
+.btn {
+  border: 1px solid #f00;
 }
 
-.slidecontent {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn:hover {
+  background-color: #f00;
+  transition: .4s ease-in-out;
 }
 
-.slidebtnnext,
-.slidebtnprev {
-  font-size: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
-  width: auto;
-  position: absolute;
-  height: 100%;
-  top: 0px;
+.mt {
+  margin-top: 3rem;
 }
 
-.slidebtnprev {
-  float: left;
-  text-align: left;
-  padding: 0 0 0 .5em;
-  left: 10px;
+.py-5 {
+  padding-bottom: 0;
 }
 
-.slidebtnnext {
-  float: right;
-  text-align: right;
-  padding: 0 .5em 0 0;
-  right: 10px;
+
+.navbar {
+  background-color: #f00;
+  padding: 0;
 }
 
-.slidebtnprev a,
-.slidebtnnext a {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.slidebtnprev a:hover,
-.slidebtnnext a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
-.pag {
-  font-size: 20px;
-  text-align: center;
-  background-color: #aaa;
-  line-height: 200%;
-  height: 40px;
-}
-
-.pag a {
+.navbar-light .navbar-nav .nav-link {
   color: #fff;
-  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  /* margin: 20px; */
+  padding: 20px;
 }
 
-.pag a:hover {
-  color: #000;
-  text-decoration: none;
-  color: #f00;
+.navbar-light .navbar-nav .nav-link:hover {
+  background: #ccc;
 }
 
-.pag a.pagactive {
-  color: #000;
+nav .logo {
+  margin-right: 170px;
+  padding: 5px;
 }
 
-.pag.pagWithThumbs {
-  font-size: 0px;
+nav .logo img {
+  height: 70px;
+  width: 300px;
 }
 
-.pag.pagWithThumbs a.pagactive {
-  border: 2px solid #000;
+.bg {
+  background-image: url(../img/hero-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100vh - 70px);
+  z-index: 9;
+  position: relative;
 }
 
-.pag.pagWithThumbs a {
-  border: 2px solid transparent;
-  display: inline-block;
-  margin: 3px 5px 0px;
+.overlay {
+  position: absolute;
+  /* Sit on top of the page content */
+  width: 100%;
+  height: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  /* Black background with opacity */
+  z-index: 10;
+  /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer;
+  /* Add a pointer on hover */
 }
 
-.pag.pagWithThumbs a:hover {
-  border: 2px solid #f00;
-}
-
-.pagWithThumbs img {
-  border-radius: 50%;
-  width: 30px;
+.high {
+  z-index: 1000;
 }
