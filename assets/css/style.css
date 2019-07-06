@@ -97,6 +97,10 @@ nav .logo img {
   z-index: 1000;
 }
 
+#about-us {
+  background: #f00;
+}
+
 #about-us .container .about-pg p {
   font-size: 1.1rem;
 }
@@ -106,6 +110,7 @@ nav .logo img {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 10px;
 }
 
 @keyframes fadein {
@@ -129,6 +134,7 @@ nav .logo img {
 #market .market-grid .image:hover .hover-bg {
   padding: 10px 20px;
   background: rgba(255, 5, 0, 0.8);
+  border-radius: 10px;
 }
 
 #market .market-grid .image .hover-bg .text {
@@ -252,4 +258,21 @@ nav .logo img {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+#services {
+  background: #f00;
+  margin-top: 1.5rem;
+}
+
+#services .card {
+  margin-bottom: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#services .card:hover {
+  transform: scale(1.1, 1.1);
+  -webkit-box-shadow: -1px 2px 32px 10px rgba(255, 255, 255, 0.507);
+  -moz-box-shadow: -1px 2px 32px 10px rgba(255, 255, 255, 0.507);
+  box-shadow: -1px 2px 32px 10px rgba(255, 255, 255, 0.507);
 }

@@ -46,6 +46,46 @@
     </div>
   </nav>
 
+  <!-- Modal -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="recipient-name" name="fn">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Telephone:</label>
+              <input type="text" class="form-control" name="tel">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Jumbotron -->
 
   <section id="hero">
@@ -65,7 +105,8 @@
                 products.
               </p>
               <div class="d-flex justify-content-center high">
-                <div class="px-1"><a class="btn high btn-lg text-white" href="!#">Contact Us</a></div>
+                <div class="px-1"><a class="btn high btn-lg text-white" href="!#" data-toggle="modal"
+                    data-target="#exampleModal">Contact Us</a></div>
               </div>
             </div>
           </div>
@@ -76,7 +117,7 @@
   <!-- About Us -->
 
   <section id="about-us">
-    <div class="justify-content-center text-center py-3">
+    <div class="justify-content-center text-center text-white py-3">
       <h1 class="display-5">About Us</h1>
     </div>
     <div class="container">
@@ -84,7 +125,7 @@
         <div class="about-img col-lg-6 col-sm-12 ">
           <img src="assets/img/about-us.jpg" class="img-fluid" alt="company photo">
         </div>
-        <div class="about-pg col-lg-6 col-sm-12 text-center">
+        <div class="about-pg col-lg-6 col-sm-12 text-center text-white">
           <p>
             Swift Tech LLC is an authorized distributor of electronics and aerospace parts and hardware that
             specializes
@@ -104,102 +145,149 @@
         </div>
       </div>
     </div>
-    <section id="market">
-      <div class="justify-content-center text-center py-3">
-        <h1 class="display-5">Markets We Serve</h1>
-      </div>
-      <div class="market-grid container-fluid">
-        <!-- <div class="aerospace ">
+  </section>
+  <!-- market grid -->
+  <section id="market">
+    <div class="justify-content-center text-center py-3">
+      <h1 class="display-5">Markets We Serve</h1>
+    </div>
+    <div class="market-grid container-fluid">
+      <!-- <div class="aerospace ">
           <h3 class="market-detail">aerospace</h3>
           <img src="assets/img/aerospace.jpg" class="img-fluid mb-4 fit" alt="">
         </div> -->
 
-        <div class="image image1 aerospace fit">
-          <div class="hover-bg">
-            <div class="text">Aerospace</div>
-          </div>
+      <div class="image image1 aerospace fit">
+        <div class="hover-bg">
+          <div class="text">Aerospace</div>
         </div>
+      </div>
 
 
-        <!-- <div class="commercial">
+      <!-- <div class="commercial">
           <h3 class="market-detail">commercial</h3>
           <img src="assets/img/commercial.jpg" class="img-fluid mb-4  fit" alt="" data-wow-delay="0.3s">
         </div> -->
 
-        <div class="image image2 commercial fit">
-          <div class="hover-bg">
-            <div class="text">commercial</div>
-          </div>
+      <div class="image image2 commercial fit">
+        <div class="hover-bg">
+          <div class="text">commercial</div>
         </div>
+      </div>
 
 
-        <!-- <div class="automotive">
+      <!-- <div class="automotive">
           <h3 class="market-detail">automotive</h3>
           <img src="assets/img/automotive.jpg" class="img-fluid mb-4  fit" alt="" data-wow-delay="0.1s">
         </div> -->
 
-        <div class="image image3 automotive fit">
-          <div class="hover-bg">
-            <div class="text">automotive</div>
-          </div>
+      <div class="image image3 automotive fit">
+        <div class="hover-bg">
+          <div class="text">automotive</div>
         </div>
+      </div>
 
 
-        <!-- <div class="medical">
+      <!-- <div class="medical">
           <h3 class="market-detail">medical</h3>
           <img src="https://media0.giphy.com/media/3o6Zt5Hhky3LJddnj2/giphy.gif" class="img-fluid mb-4  fit" alt=""
             data-wow-delay="0.4s">
         </div> -->
 
-        <div class="image image4 medical fit">
-          <div class="hover-bg">
-            <div class="text">medical</div>
-          </div>
+      <div class="image image4 medical fit">
+        <div class="hover-bg">
+          <div class="text">medical</div>
         </div>
+      </div>
 
 
-        <!-- <div class="tech">
+      <!-- <div class="tech">
           <h3 class="market-detail">tech</h3>
           <img src="https://thumbs.gfycat.com/WavyBowedFattaileddunnart-size_restricted.gif" class="img-fluid mb-4  fit"
             alt="" data-wow-delay="0.4s">
         </div> -->
 
-        <div class="image image5 tech fit">
-          <div class="hover-bg">
-            <div class="text">tech</div>
-          </div>
+      <div class="image image5 tech fit">
+        <div class="hover-bg">
+          <div class="text">tech</div>
         </div>
+      </div>
 
 
-        <!-- <div class="military">
+      <!-- <div class="military">
           <h3 class="market-detail">military</h3>
           <img src="assets/img/military.jpg" class="img-fluid mb-4  fit" alt="" data-wow-delay="0.2s">
         </div> -->
 
-        <div class="image image6 military fit">
-          <div class="hover-bg">
-            <div class="text">military</div>
-          </div>
+      <div class="image image6 military fit">
+        <div class="hover-bg">
+          <div class="text">military</div>
         </div>
+      </div>
 
 
-        <!-- <div class="transportation">
+      <!-- <div class="transportation">
           <h3 class="market-detail">transportation</h3>
           <img src="assets/img/transportation.jpg" class="img-fluid mb-4  fit" alt="" data-wow-delay="0.5s">
         </div> -->
 
-        <div class="image image7 transportation fit">
-          <div class="hover-bg">
-            <div class="text">transportation</div>
-          </div>
+      <div class="image image7 transportation fit">
+        <div class="hover-bg">
+          <div class="text">transportation</div>
         </div>
-
-
       </div>
-    </section>
 
+
+    </div>
   </section>
 
+  <section id="services">
+    <div class="service-cards container-fluid">
+      <div class="justify-content-center text-center text-white py-3">
+        <h1 class="display-5">Our Services</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/components.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Hardware/Components</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias corrupti fugit
+                  maxime cum obcaecati.</p>
+                <a href="#" class="btn high btn-lg text-black">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/military-tech.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Virtual Training</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ipsa praesentium
+                  officiis aspernatur rem doloribus.</p>
+                <a href="#" class="btn high btn-lg text-black">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards col-sm-12 col-lg-4">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="assets/img/parts2.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Aerospace Components</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam deleniti sunt
+                  magnam ratione. Earum, totam.</p>
+                <a href="#" class="btn high btn-lg text-black">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
@@ -210,6 +298,19 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="assets/js/script.js"></script>
+
+  <script>
+    $('#exampleModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget) // Button that triggered the modal
+      var recipient = button.data('whatever') // Extract info from data-* attributes
+      // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+      // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods
+
+      var modal = $(this)
+      modal.find('.modal-title').text('New message to ' + recipient)
+      modal.find('.modal-body input').val(recipient)
+    });
+  </script>
 
 </body>
 
