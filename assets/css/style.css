@@ -31,6 +31,7 @@ h2 {
 }
 
 .btn:hover {
+  color: #fff;
   background-color: #f00;
   transition: 0.4s ease-in-out;
 }
@@ -99,6 +100,7 @@ nav .logo img {
 
 #about-us {
   background: #f00;
+  padding: 20px;
 }
 
 #about-us .container .about-pg p {
@@ -126,7 +128,7 @@ nav .logo img {
 #market .market-grid .image .hover-bg {
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0);
-  transition: all ease-in;
+  transition: all .4s ease-in-out;
   height: 100%;
   width: 100%;
 }
@@ -139,7 +141,7 @@ nav .logo img {
 
 #market .market-grid .image .hover-bg .text {
   color: #fff;
-  font-size: 4.5rem;
+  font-size: 5vw;
   font-weight: 700;
   margin: 0 auto;
   text-transform: capitalize;
@@ -275,4 +277,19 @@ nav .logo img {
   -webkit-box-shadow: -1px 2px 32px 10px rgba(255, 255, 255, 0.507);
   -moz-box-shadow: -1px 2px 32px 10px rgba(255, 255, 255, 0.507);
   box-shadow: -1px 2px 32px 10px rgba(255, 255, 255, 0.507);
+}
+
+footer {
+  padding: 0;
+  background: #f00;
+  color: #fff;
+}
+
+footer .footer-content {
+  padding: 20px;
+}
+
+footer .footer-content p {
+  font-weight: 700;
+  font-size: 25px;
 }
