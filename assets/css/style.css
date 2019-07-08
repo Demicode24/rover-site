@@ -23,16 +23,21 @@ h1 {
 }
 
 h2 {
-  font-size: 3vh;
+  font-size: 3vw;
+}
+
+body {
+  background-color: #FFF1D0;
 }
 
 .btn {
+  background-color: #F00;
   border: 1px solid #f00;
 }
 
 .btn:hover {
   color: #fff;
-  background-color: #f00;
+  background-color: #FF2E2E;
   transition: 0.4s ease-in-out;
 }
 
@@ -53,7 +58,8 @@ h2 {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  background: #ccc;
+  background: #FF2E2E;
+
 }
 
 nav .logo {
@@ -103,8 +109,14 @@ nav .logo img {
   padding: 20px;
 }
 
+#about-us .container .about-img img {
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
 #about-us .container .about-pg p {
   font-size: 1.1rem;
+  font-weight: 700;
 }
 
 .fit {
